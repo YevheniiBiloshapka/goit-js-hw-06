@@ -23,14 +23,3 @@ const addItemsIngredients = ingredients.map((ingredient) => {
   return newItem;
 });
 listIngredients.append(...addItemsIngredients);
-
-// let itemIngredients = [];
-// for (let i = 0; i < ingredients.length; i++) {
-//   const newItem = document.createElement("li");
-//   newItem.textContent = `${i}`;
-//   newItem.classList.add("item");
-//   itemIngredients.push(newItem);
-// }
-
-// listIngredients.append(...itemIngredients);
-// console.log(listIngredients);

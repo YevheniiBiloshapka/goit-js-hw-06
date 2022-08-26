@@ -41,18 +41,3 @@ const itemImg = images.map((image) => {
 });
 
 listGallery.append(...itemImg);
-
-// const makeImages = (transaction) => {
-//   const { url, alt } = transaction;
-//   return `<img src=${url} alt=${alt} width="500px">`;
-// };
-
-// const imgEl = document.querySelector(".gallery");
-
-// imgEl.style.display = "flex";
-// imgEl.style.justifyContent = "space-between";
-
-// const transactionTableRowsMarkup = images.map(makeImages).join("");
-
-// imgEl.insertAdjacentHTML("beforeend", transactionTableRowsMarkup);
-// console.log(transactionTableRowsMarkup);
