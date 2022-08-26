@@ -42,8 +42,6 @@ const itemImg = images.map((image) => {
 
 listGallery.append(...itemImg);
 
-console.log(listGallery);
-
 // const makeImages = (transaction) => {
 //   const { url, alt } = transaction;
 //   return `<img src=${url} alt=${alt} width="500px">`;

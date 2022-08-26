@@ -16,4 +16,3 @@ for (const category of totalCategories) {
     category.lastElementChild.childElementCount
   );
 }
-sdf;

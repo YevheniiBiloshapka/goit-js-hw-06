@@ -23,7 +23,6 @@ const addItemsIngredients = ingredients.map((ingredient) => {
   return newItem;
 });
 listIngredients.append(...addItemsIngredients);
-console.log(listIngredients);
 
 // let itemIngredients = [];
 // for (let i = 0; i < ingredients.length; i++) {
