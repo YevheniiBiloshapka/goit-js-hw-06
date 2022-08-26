@@ -6,14 +6,12 @@ const colorButton = {
   span: document.querySelector(".color"),
   body: document.querySelector("body"),
 };
-let colorValue = "";
 
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
 
 colorButton.button.addEventListener("click", (event) => {
-  colorValue = getRandomHexColor();
-  colorButton.span.textContent = colorValue;
-  colorButton.body.style.backgroundColor = colorValue;
+  colorButton.span.textContent = getRandomHexColor();
+  colorButton.body.style.backgroundColor = getRandomHexColor();
 });

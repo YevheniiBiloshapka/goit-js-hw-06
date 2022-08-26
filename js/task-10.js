@@ -27,7 +27,7 @@ const controls = {
 const { input, create, destroy, boxes } = controls;
 let inputValue = 0;
 let size = 30;
-input.addEventListener("input", weGetNumberOfNewBoxes);
+input.addEventListener("input", getNumberOfNewBoxes);
 create.addEventListener("click", createNewBox);
 destroy.addEventListener("click", clearAllBox);
 
@@ -44,11 +44,11 @@ function createNewBox(event) {
   return boxes.append(...addedElements);
 }
 
-function weGetNumberOfNewBoxes(event) {
-  console.log(event.target.value);
+function getNumberOfNewBoxes(event) {
   inputValue = Number(event.target.value);
 }
 
 function clearAllBox() {
+  size = 30;
   boxes.innerHTML = "";
 }
