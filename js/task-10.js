@@ -45,7 +45,7 @@ function createNewBox(event) {
 }
 
 function getNumberOfNewBoxes(event) {
-  inputValue = Number(event.target.value);
+  inputValue = +event.target.value;
 }
 
 function clearAllBox() {

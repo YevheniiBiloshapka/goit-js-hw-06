@@ -28,16 +28,13 @@ const listGallery = document.querySelector(".gallery");
 listGallery.style.display = "flex";
 listGallery.style.justifyContent = "space-between";
 
-const itemImg = images.map((image) => {
-  const itemElement = document.createElement("li");
-  const imgElement = document.createElement("img");
-  imgElement.src = `${image.url}`;
-  imgElement.alt = `${image.alt}`;
-  imgElement.height = `300`;
+const addItemImg = createImgItems(images);
+listGallery.insertAdjacentHTML("beforeend", addItemImg);
 
-  itemElement.append(imgElement);
-
-  return itemElement;
-});
-
-listGallery.append(...itemImg);
+function createImgItems(images) {
+  return images
+    .map(({ url, alt }) => {
+      return `<li><img src ="${url}" alt="${alt}" height="300" width="500"></li>`;
+    })
+    .join("");
+}

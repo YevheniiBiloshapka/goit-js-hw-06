@@ -11,7 +11,9 @@ function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
 
-colorButton.button.addEventListener("click", (event) => {
-  colorButton.span.textContent = getRandomHexColor();
-  colorButton.body.style.backgroundColor = getRandomHexColor();
+colorButton.button.addEventListener("click", () => {
+  const randomColor = getRandomHexColor();
+
+  colorButton.span.textContent = randomColor;
+  colorButton.body.style.backgroundColor = randomColor;
 });
